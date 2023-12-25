@@ -13,8 +13,8 @@ function updateAutomatedValues() {
     executedPrice = assetPrice - 270;
     mt5Price = assetPrice - 25;
   } else if (assetType === 'gold') {
-    executedPrice = assetPrice - 20;
     mt5Price = assetPrice - 3;
+    executedPrice = mt5Price - 2;
   }
 
   let result = '';
