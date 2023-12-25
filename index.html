@@ -1,13 +1,33 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price Compare</title>
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Heloo Cek Sound</h1>
+    <div class="title">BOOKMAP X MT5</div>
+    <div class="comparison-container">
+        <div class="select-container">
+            <label for="asset-type">Pilih Aset:</label>
+            <select id="asset-type" onchange="updateAutomatedValues()">
+                <option value="btc">BTC</option>
+                <option value="gold">GOLD</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="asset-price">Harga:</label>
+            <input type="number" id="asset-price" class="price-input" oninput="updateAutomatedValues()">
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
