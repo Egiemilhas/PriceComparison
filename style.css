@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column; /* Mengatur tata letak menjadi kolom */
   align-items: center; /* Membuat konten berada di tengah secara horizontal */
-  justify-content: center;
+  justify-content: start;
   height: 80vh;
   margin: 0;
   background: #f5f5f5;
@@ -40,7 +40,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 300px;
-  margin: auto;
+  margin-top: 20px;
   animation: fadeIn 0.8s ease-in-out;
 }
 
