@@ -10,7 +10,7 @@ function updateAutomatedValues() {
   let executedPrice, mt5Price;
 
   if (assetType === 'btc') {
-    executedPrice = assetPrice - 270;
+    executedPrice = assetPrice - 17;
     mt5Price = assetPrice - 25;
   } else if (assetType === 'gold') {
     mt5Price = assetPrice - 3;
